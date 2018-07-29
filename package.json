@@ -1,0 +1,14 @@
+{
+  "name": "down-cli",
+  "version": "0.0.1",
+  "description": "Simple Command Line tool to check if a website is down",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitul Patel",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
