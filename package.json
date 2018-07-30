@@ -12,6 +12,6 @@
   "author": "Mitul Patel",
   "license": "ISC",
   "dependencies": {
-    "meow": "^5.0.0"
+    "node-fetch": "^2.2.0"
   }
 }
