@@ -6,9 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "down": "cli.js"
+  },
   "author": "Mitul Patel",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1"
+    "meow": "^5.0.0"
   }
 }
