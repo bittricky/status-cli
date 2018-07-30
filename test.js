@@ -1,0 +1,11 @@
+import childProcess from 'child_process';
+import test from 'ava';
+
+test.cb('main', t => {
+	const cp = childProcess.spawn('./cli.js', {stdio: 'inherit'});
+
+	cp.on('close', code => {
+		t.is(code, 0);
+		t.end();
+	});
+});

@@ -4,7 +4,7 @@
   "description": "Simple Command Line tool to check if a website is down",
   "main": "cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "bin": {
     "down": "cli.js"
@@ -13,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "ava": "1.0.0-beta.6"
   }
 }
