@@ -7,9 +7,11 @@ const bad = '\033[91m✘\033[0m';
 
 function showHelp() {
   let message = `
-    Usage:
-	  $ down [file] [url]
-  `;
+    Usage: \n
+    $ down -f [file] check list of address in external file \n
+    $ down -u [url]  check direct url address \n
+    $ down -h        display commands \n`;
+
   process.stdout.write(message);
   process.exit();
 }
@@ -36,12 +38,38 @@ function file(file) {
   });
 }
 
-if (process.argv[2] === undefined || process.argv[2] === '-h') {
-  showHelp();
+function handleUrl() {
+  if(process.argv[3] !== undefined) {
+    if (process.argv[3].startsWith('http') || process.argv[3].startsWith('https'))
+      getStatus(process.argv[3]);
+  } else {
+    showHelp();
+  }
 }
 
-if (process.argv[2].startsWith('http') || process.argv[2].startsWith('https')) {
-  getStatus(process.argv[2]);
+function handleFile() {
+  if (process.argv[3] !== undefined) {
+    file(process.argv[3]);
+  } else{
+    showHelp();
+  }
 }
 
-file(process.argv[2]);
+function init(arg) {
+  switch(arg) {
+    case undefined:
+      showHelp();
+      break;
+    case '-h':
+      showHelp();
+      break;
+    case '-u':
+      handleUrl();
+      break;
+    case '-f':
+      handleFile();
+      break;
+  }
+}
+
+init(process.argv[2]);
