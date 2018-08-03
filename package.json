@@ -1,7 +1,7 @@
 {
   "name": "down-cli",
   "version": "0.0.1",
-  "description": "Simple Command Line tool to check if a website is down",
+  "description": "Simple Command Line tool to check if a website is up or down",
   "main": "cli.js",
   "scripts": {
     "test": "ava"
@@ -11,7 +11,7 @@
     "down": "cli.js"
   },
   "author": "Mitul Patel",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.2.0"
   },
