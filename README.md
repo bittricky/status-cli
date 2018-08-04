@@ -4,8 +4,9 @@
 
 ## Install
 
+Ensure you have Node.js version 8+ installed. Then run the following:
 ```
-$ npm install --save status-cli
+$ npm install --global status-cli
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 {
   "name": "status-cli",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple Command Line tool to check if a website is up or down",
   "main": "cli.js",
   "scripts": {
