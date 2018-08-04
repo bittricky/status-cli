@@ -12,7 +12,7 @@ $ npm install --global status-cli
 ## Usage
 
 ```
-$ status --h
+$ status -h
 
   Usage
     $ status -f url_list.txt
