@@ -1,21 +1,21 @@
-# down-cli
+# status-cli
 
 > Check if a website is up or down
 
 ## Install
 
 ```
-$ npm install --save down-cli
+$ npm install --save status-cli
 ```
 
 ## Usage
 
 ```
-$ down --h
+$ status --h
 
   Usage
-    $ down -f url_list.txt
-    $ fast -u http://example.com
+    $ status -f url_list.txt
+    $ status -u http://example.com
 ```
 
 ## License
